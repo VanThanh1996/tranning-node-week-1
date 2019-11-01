@@ -49,7 +49,4 @@ app.listen(3000, () => {
 })
 
 
-
-// câu hỏi bài tập
-//1. function call back trong nodejs là gì ?
-//2. router trong express là gì ?
+// Văn Phước GP Code Here

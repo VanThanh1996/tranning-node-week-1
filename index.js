@@ -43,10 +43,18 @@ app.get('/get-year-now',function (req,res) {
   var year = now.getFullYear();
   res.send({data: year});
 })
-
+//bai3 word
+app.post('/add-two-number' ,function(req,res){
+    var body = req.body;
+    var number_1 = req.body.number_1;
+    var number_2 = req.body.number_2;
+    var kq = number_1+number_2;
+    res.send('number_1 + '+'number_2:='+ kq);
+});
 app.listen(3000, () => {
   console.log('app listen on port 3000 !');
 })
 
 
 // Văn Phước GP Code Here
+

@@ -1,0 +1,25 @@
+{
+  "name": "tranning-node-week-1",
+  "version": "1.0.0",
+  "description": "bài tập tuần 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanThanh1996/tranning-node-week-1.git"
+  },
+  "author": "vanthanh1996",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanThanh1996/tranning-node-week-1/issues"
+  },
+  "homepage": "https://github.com/VanThanh1996/tranning-node-week-1#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1"
+  }
+}

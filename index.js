@@ -2,7 +2,9 @@
 const express = require('express');
 // app này là 1 instance (1 thực thể của class express)
 const app = express();
-
+var bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 /*
 1.	Khai báo 1 API với các yêu cầu sau:
 -	Method API: GET
@@ -51,9 +53,21 @@ app.post('/add-two-number' ,function(req,res){
     var kq = number_1+number_2;
     res.send('number_1 + '+'number_2:='+ kq);
 });
+//bai4
+app.post('/increment-item-in-array', function(req,res){
+    var Mang = req.body.Mang;
+    // let arr = Mang.map(item =>{
+    //     return item + 5;
+    // });
+    Mang.forEach((item,index) => {
+        Mang[index] = item + 5;
+    });
+
+    res.send(Mang);
+});
 app.listen(3000, () => {
   console.log('app listen on port 3000 !');
-})
+});
 
 
 // Văn Phước GP Code Here
